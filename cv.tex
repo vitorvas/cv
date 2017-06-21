@@ -1,0 +1,234 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Wenneker Resume/CV
+% LaTeX Template
+% Version 1.1 (19/6/2016)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com) with extensive modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,12pt]{memoir} % Font and paper size
+
+\input{structure.tex} % Include the file specifying document layout and packages
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION 
+%----------------------------------------------------------------------------------------
+
+\userinformation{ % Set the content that goes into the sidebar of each page
+\begin{flushright}
+% Comment out this figure block if you don't want a photo
+\includegraphics[width=0.6\columnwidth]{Vitor_CV_1.jpg}\\[\baselineskip] % Your photo
+\small % Smaller font size
+Vitor Vasconcelos Araújo Silva
+\url{vitors@cdtn.br} \\ % Your email address
+\url{github.com/vitorvas} \\ % Your URL
++55 31 3069 3466 \\ % Your phone number
+Born 10/22/1977 \\
+\Sep % Some whitespace
+\textbf{Address} \\
+Rua Tuiuti 4/402 \\
+Belo Horizonte-MG, 30720-440 \\ % Address 2
+Brazil \\ % Address 3
+\vfill % Whitespace under this block to push it up under the photo
+\end{flushright}
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\userinformation % Print your information in the left column
+
+\framebreak % End of the first column
+
+%----------------------------------------------------------------------------------------
+%	HEADING
+%----------------------------------------------------------------------------------------
+
+\cvheading{Vitor Vasconcelos Araújo Silva} % Large heading - your name
+
+\cvsubheading{Computer Scientist} % Subheading - your occupation/specialization
+
+%----------------------------------------------------------------------------------------
+%	ABOUT ME
+%----------------------------------------------------------------------------------------
+
+\aboutme{About Me}{Computer scientist of formation, I have training in radiation protection and nuclear safety. I have experience in Linux
+  environment installation and management and computer programming and since 2011 I work as part of a mixed group of Mechanical and Electrical
+  engineers, being the only on computer scientist. Most of group activities are related to thermal-hydraulics and neutronics simulation of nuclear reactors, in
+  special the brazilian multipurpose reactor project and our TRIGA IPR-R1 reactor. My current activities are strongly related to software development
+aimed to multiphysics calculations.}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\CVSection{Education}
+
+%------------------------------------------------
+
+
+\CVItem{2011 - 2016, Universidade Federal de Minas Gerais - UFMG}{D.Sc in Nuclear Science and Techniques}\\
+\CVItem{Sep 2010 - Dec 2010, Universidad de Buenos Aires - UBA}{Postgraduate Certificate in Nuclear Safety (345h)}\\
+\CVItem{Mar 2010 - Sep 2010, Universidad de Buenos Aires - UBA}{Postgraduate Certificate in Radiation Protection and Radiation Sources Safety (700h)}\\
+\CVItem{2003 - 2006, Universidade Federal de Rio de Janeiro - UFRJ}{M.Sc in Systems and Computational Engineering}\\
+\CVItem{1999 - 2002, Universidade Federal de Minas Gerais - UFMG}{BS in Computer Science}\\
+
+%------------------------------------------------
+
+\Sep % Extra whitespace after the end of a major section
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\CVSection{Experience}
+
+%------------------------------------------------
+
+\CVItem{April 2009 - present, \textit{Senior Technologist}, Nuclear Technology Development Center (CDTN) [Belo Horizonte, BRAZIL]}{
+  Detailed achievements:\\
+  \textbf{at Radiations Dosimetry Department (Apr 2009 - Aug 2011)}
+  \begin{itemize}
+  \item  Management of film based dosimetry software and database of CDTN.
+  \end{itemize}
+  \textbf{at Nuclear Reactors Technology Department (Aug 2011 - today)}
+  \begin{itemize}
+  \item Linux administrator at Thermal-hydraulics CFD laboratory.
+  \item Computational Fluid Dynamics (CFD) modelling of TRIGA IPR-R1 reactor.
+  \item Neutronics modelling of TRIGA IPR-R1 reactor using \textit{Serpent} Monte Carlo code.
+  \item Free software development using \textit{OpenFOAM} CFD framework.
+  \item \textit{OpenFOAM} CFD coupling with deterministic finite volumes free nuclear code \textit{milonga}.
+  \item Undergraduate students advisor in software development applied to control.
+  \item Radiation protection plan of TRIGA IPR-R1 reactor updating.
+  \end{itemize}
+}
+
+%----------------------------------------------------------------------------------------
+%	NEW PAGE DELIMITER
+%	Place this block wherever you would like the content of your CV to go onto the next page
+%----------------------------------------------------------------------------------------
+
+\clearpage % Start a new page
+
+\userinformation % Print your information in the left column
+
+\framebreak % End of the first column
+
+%------------------------------------------------
+
+\CVItem{Dec 2006 - Nov 2008, \textit{Software Engineer at team \textit{QGAR}}, INRIA Grand'Est, [Nancy, FRANCE]}{
+  Detailed achievements:
+  \begin{itemize}
+  \item Multiplatform compilation scripts for the pattern recognition and image analisys tool \textit{QGAR}.
+  \item Re-writing \textit{Qt} library dependent code to comply with new API.
+  \item \textit{QGAR} Graphics User Interface maintenance and development.
+  \item Incorporation of new algorithms to \textit{QGAR} tool.
+  \end{itemize}
+}
+
+\CVItem{Sep 2002 - Nov 2006, \textit{Junior Technologist}, National Nuclear Energy Commission (CNEN) [Rio de Janeiro, BRAZIL]}{
+  Detailed achievements:
+  \begin{itemize}
+  \item Linux electronic mail administrator (Sendmail and Postfix).
+  \item Microsoft ASP systems development and maintenance.
+  \item Neutrongraphy image processing algorithm development.
+  \end{itemize}
+}
+%------------------------------------------------
+
+\Sep % Extra whitespace after the end of a major section
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS
+%----------------------------------------------------------------------------------------
+
+\CVSection{Language Skills}
+
+%------------------------------------------------
+
+\CVItem{Portuguese}{\textit{Mother Language}.}\\
+\CVItem{English}{\textit{Fluent}.}\\
+\CVItem{French and Spanish}{ \textit{Read, Speak and Understand. Basic written skills}.}\\
+
+%------------------------------------------------
+
+\Sep % Extra whitespace after the end of a major section
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+
+\CVSection{Software Development Skills}
+
+%------------------------------------------------
+
+\CVItem{Programming}
+ {\begin{tabular}{p{0.15\textwidth} p{0.15\textwidth} p{0.15\textwidth} p{0.15\textwidth}}
+ \textbf{Experienced:} & & &\\          
+ \bluebullet C &  \bluebullet C++ & \bluebullet Python & \bluebullet Linux\\
+ \textbf{Intermediary:} & & &\\          
+ \bluebullet MPI &  \bluebullet git & \bluebullet OpenCL & \\
+\end{tabular}}
+       
+       %------------------------------------------------
+
+\CVItem{Computer Software}
+{\begin{tabular}{p{0.325\textwidth} p{0.3\textwidth} }
+    \bluebullet Serpent Monte Carlo &  \bluebullet OpenFOAM \\
+    \bluebullet \textit{milonga} & \\
+\end{tabular}}
+
+%------------------------------------------------
+
+\Sep % Extra whitespace after the end of a major section
+
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+
+\CVSection{Awards}
+
+%------------------------------------------------
+
+\CVItem{2013, \textit{CAPES Sandwich Scholarship}, Universidad Politècnica de València [Valencia, SPAIN]}{Brazilian government funding for one year doctoral studies abroad.}
+
+%------------------------------------------------
+
+\Sep % Extra whitespace after the end of a major section
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS
+%----------------------------------------------------------------------------------------
+
+\CVSection{Interests}
+
+%------------------------------------------------
+
+\CVItem{Professional}{Scientific computing, free software development in the nuclear field, GPU programming, CUDA and OpenCL development.}
+
+%------------------------------------------------
+
+\CVItem{Personal}{Hiking, travelling, swimming and volleyball.}
+
+%------------------------------------------------
+
+\Sep % Extra whitespace after the end of a major section
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
